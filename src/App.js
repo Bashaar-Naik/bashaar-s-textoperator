@@ -9,10 +9,10 @@ import Alert from './components/Alert';
 // Learning to use the react router so we have to import the stuff from the react router
 
 // Use this version - npm install react-router-dom@5.2.0
-import {
-  BrowserRouter as Router,
-  Switch, Route, Link
-} from "react-router-dom"
+// import {
+//   BrowserRouter as Router,
+//   Switch, Route, Link
+// } from "react-router-dom"
 
 
 // function App() {
@@ -119,26 +119,26 @@ function App() {
 
 
       {/* Everything must be inside the REACT Router so we can put a router over here */}
-      <Router>
+      {/* <Router> */}
 
-        <Navbar title='Bashaar ka textutils' mode={mode} toggleMode={toggleMode}></Navbar>
-        <Alert alert={alert}></Alert>
-        <div className="container">
+      <Navbar title="Bashaar's Text-Operator" mode={mode} toggleMode={toggleMode}></Navbar>
+      <Alert alert={alert}></Alert>
+      <div className="container">
 
-          {/* We will now insert the SWITCH here */}
-          <Switch>
+        {/* We will now insert the SWITCH here */}
+        {/* <Switch> */}
 
-            <Route exact path="/about">
-              <About />
-            </Route>
+        {/* <Route exact path="/about"> */}
+        {/* </Route> */}
 
-            <Route exact path="/">
-              <TextForm heading='Enter Text to analysize' mode={mode} showAlert={showAlert}></TextForm>
-            </Route>  
+        {/* <Route exact path="/"> */}
+        <TextForm heading='Enter text to perform operations' mode={mode} showAlert={showAlert}></TextForm>
+        {/* <About /> */}
+        {/* </Route>   */}
 
-          </Switch>
-        </div>
-      </Router>
+        {/* </Switch> */}
+      </div>
+      {/* </Router> */}
 
     </>
   )
